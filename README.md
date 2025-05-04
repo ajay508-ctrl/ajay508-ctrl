@@ -1,0 +1,96 @@
+- 👋 Hi, I’m @ajay508-ctrl
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+
+<!---
+ajay508-ctrl/ajay508-ctrl is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+
+<!-- ####################################################### -->
+ <!-- #  [OBJECT: 1405_SUBLOCADE_FLEX_032_TXT_ALT_FRST_NM]  # -->
+ <!-- ####################################################### -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="EED2E2CB4AB2CCF215CFD4AB0362EF69"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="file:///C:\Program Files (x86)\MicroStrategy\Developer\Images\ProjectDoc\AttributeL.bmp"></TD><TD>1405_SUBLOCADE_FLEX_032_TXT_ALT_FRST_NM</TD></TR></TABLE>
+    <!--========== SECTION: ATTRIBUTE FORMS ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>ATTRIBUTE FORMS</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+     <COL WIDTH=20%><COL WIDTH=20%><COL WIDTH=20%><COL WIDTH=20%><COL WIDTH=20%>
+     <TR ALIGN=CENTER>
+      <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=20%>FORM NAME</TD>
+      <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=20%>FORM CATEGORY</TD>
+      <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=20%>FORMAT TYPE</TD>
+      <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=20%>COLUMN ALIAS</TD>
+      <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=20%>MULTILINGUAL</TD>
+     </TR>
+     <TR>
+      <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="file:///C:\Program Files (x86)\MicroStrategy\Developer\Images\ProjectDoc\AttributeForm.bmp">&nbsp;<A HREF="#45C11FA478E745FEA08D781CEA190FE5_276"  CLASS=MAINBODY>ID</A></TD>
+      <TD CLASS=BORDERRB>ID</TD>
+      <TD CLASS=BORDERRB>Text</TD>
+      <TD CLASS=BORDERRB>FLEX_032_TXT</TD>
+      <TD ALIGN=CENTER CLASS=BORDERRB><IMG SRC="file:///C:\Program Files (x86)\MicroStrategy\Developer\Images\ProjectDoc\XGray.bmp"</TD>
+     </TR>
+    </TABLE>
+    <!--========== SECTION: ATTRIBUTE FORM DETAILS ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>ATTRIBUTE FORM DETAILS</TD></TR></TABLE>
+    <!---------- ID ---------->
+    <TABLE CLASS=MAINBODY HEIGHT=10><TR><TD></TD></TR></TABLE>
+    <A NAME="45C11FA478E745FEA08D781CEA190FE5_276">
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD><IMG ALIGN=MIDDLE SRC="file:///C:\Program Files (x86)\MicroStrategy\Developer\Images\ProjectDoc\AttributeForm.bmp">&nbsp;<B>ID</B></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+     <COL WIDTH=25%><COL WIDTH=75%>
+     <TR ALIGN=CENTER>
+      <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=25%>PROPERTY</TD>
+      <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=75%>VALUE</TD>
+     </TR>
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Expressions</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=35%><COL WIDTH=25%><COL WIDTH=40%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=35%>EXPRESSION</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>MAPPING METHOD</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=40%>SOURCE TABLES</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB VALIGN=TOP>ApplySimple("CASE WHEN UPPER(a11.PPPD_FLEX_016_TXT) = 'OTHER' AND UPPER(#0) = 'INDIVIDUAL' THEN #1 ELSE NULL END",FLEX_031_TXT,FLEX_032_TXT)</TD>
+         <TD CLASS=BORDERRB VALIGN=TOP>Manual</TD>
+         <TD CLASS=BORDERRB VALIGN=TOP>
+          <IMG ALIGN=MIDDLE SRC="file:///C:\Program Files (x86)\MicroStrategy\Developer\Images\ProjectDoc\Table.bmp">&nbsp;V_SPCLT_PEGA_PTNT_PGM_DSPNS<FONT COLOR=#CC0000> (Lookup)</FONT><BR>
+         </TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRB>Form category</TD><TD CLASS=BORDERRB>ID</TD></TR>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRB>Form description</TD><TD CLASS=BORDERRB>&nbsp;</TD></TR>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRB>Format type</TD><TD CLASS=BORDERRB>Text</TD></TR>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRB>Default sort</TD><TD CLASS=BORDERRB>None</TD></TR>
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Column alias</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=20%>
+        <TR><TD>Name:</TD><TD>FLEX_032_TXT</TD></TR>
+        <TR><TD>Data type:</TD><TD>VarChar</TD></TR>
+        <TR><TD>Byte length:</TD><TD>50</TD></TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRB>Multilingual</TD><TD CLASS=BORDERRB>No</TD></TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+--->
