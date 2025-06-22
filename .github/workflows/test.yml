@@ -1,9 +1,16 @@
-name: Test Workflow
+name: Test SSH to Linux
 on:
- workflow_dispatch:
+ workflow_dispatch:  # allows you to run this manually
 jobs:
- hello:
+ ssh-test:
    runs-on: ubuntu-latest
    steps:
-     - name: Say Hello
-       run: echo "🎉 GitHub Actions is working!"
+     - name: Checkout Code
+       uses: actions/checkout@v3
+     - name: Start SSH Agent
+       uses: webfactory/ssh-agent@v0.8.0
+       with:
+         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+     - name: Test SSH Connection
+       run: |
+         ssh -o StrictHostKeyChecking=no karthikbi025@34.28.57.103 "echo '✅ SSH connection successful!'"
