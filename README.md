@@ -1,81 +1,78 @@
 ---
-title: SuperKart Sales Forecasting Dashboard
+title: SuperKart Sales Prediction API
 emoji: 🛒
 colorFrom: blue
 colorTo: green
-sdk: streamlit
-sdk_version: 1.29.0
-app_file: app.py
+sdk: docker
 pinned: false
 license: mit
 ---
 
-# SuperKart Sales Forecasting Dashboard 🛒
+# SuperKart Sales Prediction API 🛒
 
-An interactive web application for predicting retail sales using machine learning. This dashboard provides an intuitive interface for sales forecasting, data analysis, and business insights.
+A machine learning-powered REST API for predicting sales of retail products across different store types and locations.
 
 ## 🎯 Features
 
-- **Interactive Predictions**: Easy-to-use form for sales forecasting
-- **Real-time Results**: Instant predictions with detailed metrics
-- **Data Visualizations**: Interactive charts and graphs
-- **Model Information**: Access to model details and performance metrics
-- **Business Insights**: Key findings and recommendations
+- **Real-time Predictions**: Get instant sales forecasts for product-store combinations
+- **RESTful API**: Easy integration with any frontend or application
+- **Model Information**: Access model details and required features
+- **Error Handling**: Robust error handling and validation
+- **CORS Enabled**: Ready for web application integration
 
-## 📊 Dashboard Pages
+## 🚀 API Endpoints
 
-### 🔮 Prediction
-- Input product and store details
-- Get instant sales predictions
-- View prediction confidence and details
+### GET /
+Health check and API information
 
-### 🤖 Model Info  
-- Model performance metrics
-- Feature information
-- System status
+### POST /predict
+Make sales predictions
 
-### 📈 Data Analysis
-- Sales distribution charts
-- Product category analysis
-- Price vs sales relationships
-- Business insights and recommendations
+**Request Body:**
+```json
+{
+    "Product_Weight": 19.20,
+    "Product_Sugar_Content": "Regular",
+    "Product_Visibility": 0.073,
+    "Product_Type": "Dairy",
+    "Product_MRP": 226.8,
+    "Store_Size": "Medium",
+    "Store_Location_Type": "Tier 1",
+    "Store_Type": "Supermarket Type1"
+}
+```
 
-### ℹ️ About
-- Project overview
-- Technical details
-- Deployment information
+**Response:**
+```json
+{
+    "prediction": 2847.32,
+    "input_data": {...},
+    "timestamp": "2024-01-01T12:00:00",
+    "model_type": "RandomForestRegressor"
+}
+```
 
-## 🛠️ Technology
+### GET /model_info
+Get information about the loaded model
 
-- **Frontend**: Streamlit
-- **Visualization**: Plotly
-- **Machine Learning**: Random Forest & XGBoost
-- **Data Processing**: pandas, numpy, scikit-learn
-- **Deployment**: Docker, Hugging Face Spaces
+### GET /features
+Get required features and their descriptions
 
-## 🏪 Business Value
+## 🛠️ Technology Stack
 
-This dashboard helps SuperKart:
-- **Optimize Inventory**: Predict demand accurately
-- **Strategic Planning**: Data-driven store location decisions  
-- **Revenue Growth**: Identify high-performing combinations
-- **Cost Reduction**: Minimize waste through better forecasting
+- **Framework**: Flask
+- **ML Libraries**: scikit-learn, XGBoost
+- **Data Processing**: pandas, numpy
+- **Deployment**: Docker, Gunicorn
 
-## 📈 Model Performance
+## Usage
 
+The API is deployed and ready to use. Send POST requests to the `/predict` endpoint with the required features to get sales predictions.
+
+## Model Performance
+
+- **Algorithm**: Random Forest Regressor
 - **Accuracy**: 85%+ on test data
-- **Mean Absolute Error**: <200 units
-- **R² Score**: 0.78+
+- **Features**: 8 key product and store attributes
 
-## 🚀 Usage
-
-1. Navigate to the Prediction page
-2. Enter product and store details
-3. Click "Predict Sales" for instant results
-4. Explore data analysis for business insights
-
-Perfect for retail managers, data analysts, and business stakeholders who need quick, accurate sales forecasts and actionable insights.
-
-## 📞 Support
-
-This application connects to a backend API for predictions. Ensure the backend service is running for full functionality.
+This API serves a machine learning model trained on SuperKart retail sales data to help with inventory planning and business decision making.
