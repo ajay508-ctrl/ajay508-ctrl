@@ -5,4 +5,20 @@ numpy==2.0.2
 scikit-learn==1.6.1
 joblib==1.4.2
 xgboost==2.1.4
+
 gunicorn==21.2.0
+
+
+Step1: input the Business specific documents
+Step 2: Extract Mapping Documentation from the Mapping Algorithm Engine
+•	We have developed a Mapping Algorithm Engine powered by AI/ML algorithms using Vertex AI.
+•	Additionally, we built a MicroStrategy (MSTR) metadata extractor engine in Python. This engine extracts all MicroStrategy documentation, which is stored in HTML files.
+•	The extractor processes these HTML files and clean the data and store them into a storage location and identify the objects used in each report and retrieves their definitions, including elements like case statements. (This documentation is generated periodically.)
+•	The Mapping Algorithm Engine then leverages Vertex AI to analyze, rank, and predict the most accurate mapping attributes for new reports, based on business-specific documentation. Vertex AI keep learning with new objects
+Step 3: Wait for the user to review the generated mapping output and either approve or modify it.
+Step 4: Once the mapping sheet is approved, the MSTR API Engine will create the MicroStrategy objects.
+The MSTR API Engine consists of three core components:
+1.	Object Selection: Based on the approved mapping sheet, it identifies and selects the appropriate report objects (such as attributes, prompts, filters, etc.).
+2.	Payload Builder: A JSON payload-building algorithm constructs the payload in the required JSON structure.
+3.	Report Creation: The MSTR RESTful Services consume the JSON payload to build the final report object.
+Step 5: The MicroStrategy report is generated and made available for user review.
